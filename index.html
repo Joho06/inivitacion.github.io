@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Card</title>
+    <!-- Google Font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Import particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0"></script>
+  </head>
+  <body>
+    <!-- Contenedor de partículas -->
+    <div id="particles-js"></div>
+
+    <div class="card">
+      <div class="outside">
+        <div class="front">
+          <p>Happy Birthday</p>
+          <div class="cake">
+            <div class="top-layer"></div>
+            <div class="middle-layer"></div>
+            <div class="bottom-layer"></div>
+            <div class="candle"></div>
+          </div>
+
+        </div>
+        <div class="back"></div>
+      </div>
+      <div class="inside">
+        <strong>¡Estás invitado!</strong>
+        <p>
+            Celebra con nosotros los 15 años de <span style="font-weight: bold; color: rgb(34, 0, 82);">DANNA LOPEZ</span>. 
+            <br>¡Será un día lleno de alegría, música, y diversión!
+        </p>
+        <p><strong>Fecha:</strong> 25 de enero de 2025</p>
+        <p><strong>Hora:</strong> 5:00 PM</p>
+        <p><strong>Lugar:</strong> Comite del pueblo (mi casa)</p>
+        <h2>&#127874;</h2>
+      </div>
+    </div>
+    
+    <script>
+      // Configuración de partículas (pirotecnia)
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 50, // Número de partículas
+            density: {
+              enable: true,
+              value_area: 800
+            }
+          },
+          color: {
+            value: "#ffcc00" // Color brillante para la pirotecnia
+          },
+          shape: {
+            type: "circle" // Forma de las partículas
+          },
+          opacity: {
+            value: 0.8,
+            random: true,
+            anim: {
+              enable: true,
+              speed: 0.5,
+              opacity_min: 0.1,
+              sync: false
+            }
+          },
+          size: {
+            value: 15, // Tamaño de las partículas (más grandes)
+            random: true,
+            anim: {
+              enable: true,
+              speed: 5,
+              size_min: 1
+            }
+          },
+          move: {
+            enable: true,
+            speed: 6, // Velocidad de las partículas (más rápidas para simular pirotecnia)
+            direction: "none",
+            random: true,
+            straight: false,
+            out_mode: "out"
+          }
+        },
+        interactivity: {
+          events: {
+            onhover: {
+              enable: false
+            }
+          }
+        },
+        retina_detect: true
+      });
+    </script>
+  </body>
+</html>
