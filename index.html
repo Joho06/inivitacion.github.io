@@ -46,59 +46,60 @@
     </div>
     
     <script>
-      // Configuración de partículas (pirotecnia)
+      // Configuración de partículas (pirotecnia colorida)
       particlesJS("particles-js", {
-        particles: {
-          number: {
-            value: 50, // Número de partículas
-            density: {
-              enable: true,
-              value_area: 800
-            }
-          },
-          color: {
-            value: "#ffcc00" // Color brillante para la pirotecnia
-          },
-          shape: {
-            type: "circle" // Forma de las partículas
-          },
-          opacity: {
-            value: 0.8,
-            random: true,
-            anim: {
-              enable: true,
-              speed: 0.5,
-              opacity_min: 0.1,
-              sync: false
-            }
-          },
-          size: {
-            value: 15, // Tamaño de las partículas (más grandes)
-            random: true,
-            anim: {
-              enable: true,
-              speed: 5,
-              size_min: 1
-            }
-          },
-          move: {
-            enable: true,
-            speed: 6, // Velocidad de las partículas (más rápidas para simular pirotecnia)
-            direction: "none",
-            random: true,
-            straight: false,
-            out_mode: "out"
-          }
-        },
-        interactivity: {
-          events: {
-            onhover: {
-              enable: false
-            }
-          }
-        },
-        retina_detect: true
-      });
+  particles: {
+    number: {
+      value: 80,
+      density: {
+        enable: true,
+        value_area: 800
+      }
+    },
+    color: {
+      value: ["#ff0000", "#00ff00", "#0000ff", "#ffff00", "#ff00ff", "#00ffff"] // Colores variados
+    },
+    shape: {
+      type: "circle"
+    },
+    opacity: {
+      value: 0.8,
+      random: true,
+      anim: {
+        enable: true,
+        speed: 0.5,
+        opacity_min: 0.1,
+        sync: false
+      }
+    },
+    size: {
+      value: 10,
+      random: true,
+      anim: {
+        enable: true,
+        speed: 3,
+        size_min: 1
+      }
+    },
+    move: {
+      enable: true,
+      speed: 7,
+      direction: "none",
+      random: true,
+      straight: false,
+      out_mode: "out"
+    }
+  },
+  interactivity: {
+    events: {
+      onhover: {
+        enable: true,
+        mode: "repulse"
+      }
+    }
+  },
+  retina_detect: true
+});
     </script>
   </body>
 </html>
